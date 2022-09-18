@@ -7,10 +7,10 @@ st.caption('あやめの花にも色々ありまして。。。')
 # 基本ライブラリー
 import numpy as np
 import pandas as pd
- 
 # データセット
 ## データの読み込み
 from sklearn.datasets import load_iris
+
 iris = load_iris()
  
 df = pd.DataFrame(iris.data, columns=iris.feature_names)
@@ -24,14 +24,13 @@ X = iris.data[:, [0, 2]]
 y = iris.target
  
 from sklearn.linear_model import LogisticRegression
+
 clf = LogisticRegression()
 clf.fit(X, y)
 
 
 # アプリ
 import streamlit as st
- 
-
 
 ## サイドパネル（インプット部）
 st.sidebar.header('Input Features')
