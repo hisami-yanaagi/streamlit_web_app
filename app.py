@@ -62,6 +62,7 @@ st.write("## Output probability")
 st.write(pred_df)
 name = pred_df.idxmax(axis=1).tolist()
 st.write("## Result")
-st.write('このアイリスはきっと',str(name),"です!")
+#st.write('このアイリスはきっと',str(name),"です!")
+st.write('このアイリスはきっと',st.write(name),"です!")
 
 
