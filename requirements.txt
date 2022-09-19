@@ -1,4 +1,3 @@
-streamlit==1.11.0
-numpy==1.23.2
+Pillow==9.2.0
 pandas==1.4.4
-sklearn.datasets
+numpy==1.23.2
